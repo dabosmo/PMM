@@ -1,0 +1,7 @@
+
+
+const rl=require('readline-sync');
+
+var numero=rl.question('Introduzca un numero: '); 
+
+console.log(Math.abs(numero));
