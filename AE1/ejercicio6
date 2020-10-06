@@ -1,0 +1,20 @@
+function entero (){
+
+    const rl=require('readline-sync');
+    var numero=rl.question('Introudzca un numero: ');  
+
+    return numero;
+}
+
+function par_impar(number){
+
+    if(number%2 == 0){
+        console.log("El número introducido es par");        
+    }else{
+        console.log("El número introducido es impar");
+    }
+}
+
+var numero = entero();
+
+par_impar(numero);
