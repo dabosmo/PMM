@@ -1,0 +1,11 @@
+let array = [10, 4, 7, 13, 2, 35, 9, 5, 22, 12];
+
+console.log(findMinimum(array));
+
+function findMinimum(values){
+
+    let valorMinimo = values.reduce((a,b) => Math.min(a,b));
+
+    return valorMinimo;
+    
+}
