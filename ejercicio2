@@ -1,0 +1,32 @@
+
+let array = [10, 2, 3, 4, 5, 6];
+let arrayVacio = [];
+
+let media1;
+let media2;
+
+media1 = average(array);
+media2 = average(arrayVacio);
+
+console.log(media1);
+console.log(media2);
+
+
+
+
+function average(dataArray){
+
+    let media = 0;
+
+    if(dataArray.length != 0){
+        for(let value of dataArray){
+            media += value;
+        }
+
+        return media = media/dataArray.length;
+    }
+    else{
+        return "undefined";
+    }
+
+}
