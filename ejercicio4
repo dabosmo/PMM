@@ -1,0 +1,16 @@
+//Para comprobar el correcto funcionamiento, genero dos variables (x1 y x2): una siendo menor y otra mayor que algunos elementos.
+
+let array = [11, 12, 13, 14, 15, 16, 17, 18];
+
+var x1 = 13;
+var x2 = 10;
+
+console.log(findGreaterThan(x1, array));
+console.log(findGreaterThan(x2, array));
+
+function findGreaterThan(x, values){
+
+    let result = values.every(element => element > x);
+    
+    return result;
+}
