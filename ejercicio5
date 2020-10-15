@@ -1,0 +1,19 @@
+
+let array = [3, 4, 5, 6, 7];
+
+console.log(multipleFactorial(array));
+
+function multipleFactorial(values){
+
+    let newArray = values.map(factorial);
+
+    return newArray;
+}
+
+function factorial (n) {
+	var total = 1; 
+	for (i=1; i<=n; i++) {
+		total = total * i; 
+	}
+	return total; 
+}
