@@ -1,0 +1,13 @@
+let users = ["Antonio", "Alejandra", "Daniel", "Nina", "Laura"];
+let bans = ["Antonio", "Nina"];
+
+console.log(usersNotBan(users,bans));
+
+
+
+function usersNotBan(users, blackListed){
+
+    let newArray = users.filter(element => !blackListed.includes(element));
+
+    return newArray;
+}
