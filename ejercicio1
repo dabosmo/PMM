@@ -1,0 +1,29 @@
+//Ejercicio 1, parte A
+
+let array = ["Ana", 2, "Javi", 5, "Roberto", 7, "Vanessa", 10];
+
+let conjunto = noTexto(array);
+
+console.log(conjunto);
+
+
+function noTexto(array){
+
+    let newArray = array.filter(element => isNaN(element));
+
+    return newArray;
+}
+
+
+//Ejercicio 1, parte B
+
+function noTextoImpar(array){
+
+    let newArray = array.filter(element => !isNaN(element) &&  element%2 == 0);
+
+    return newArray;
+}
+
+let conjunto2 = noTextoImpar(array);
+
+console.log(conjunto2);
